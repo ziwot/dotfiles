@@ -28,20 +28,12 @@ return {
         capabilities = require("cmp_nvim_lsp").default_capabilities()
       end
 
-      local lspconfig = require "lspconfig"
-
       local servers = {
         bashls = true,
-        gopls = true,
         intelephense = true,
         lua_ls = true,
-        rust_analyzer = true,
-        svelte = true,
-        templ = true,
         cssls = true,
-
-        -- Probably want to disable formatting for this lang server
-        tsserver = true,
+        ts_ls = true,
 
         jsonls = {
           settings = {
@@ -93,8 +85,6 @@ return {
         "stylua",
         "lua_ls",
         "intelephense",
-        "delve",
-        "tailwindcss-language-server",
       }
 
       vim.list_extend(ensure_installed, servers_to_install)
@@ -108,7 +98,7 @@ return {
           capabilities = capabilities,
         }, config)
 
-        lspconfig[name].setup(config)
+        vim.lsp.enable(name)
       end
 
       local disable_semantic_tokens = {
@@ -143,12 +133,12 @@ return {
           if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
             return
           end
-          return { timeout_ms = 500, lsp_format = "fallback" }
+          return { timeout_ms = 3000, lsp_format = "fallback" }
         end,
         formatters_by_ft = {
           lua = { "stylua" },
-          php = { "phpcbf", "prettier" },
-          typescript = { "prettier" },
+          php = { "phpcbf" },
+          javascript = { "eslint_d", "prettier" },
         },
       }
     end,
