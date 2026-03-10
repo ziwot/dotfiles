@@ -5,28 +5,20 @@
 Run `stow` to symlink everything or just select what you want
 
 ```sh
-stow */ # Everything (the '/' ignores the README)
+stow */ -t ~/ # Everything (the '/' ignores the README)
 ```
 
 ```sh
 stow zsh # Just my zsh config
 ```
 
+```sh
+stow -nv */ -t ~/ # simulation
+```
+
 ### tmux
 
 Install plugins with `prefix + I`
-
-## Remember npm packages
-
-```sh
-npm --location=global list > npm-global.txt
-```
-
-## Save terminal conf
-
-```sh
-dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
-```
 
 ## Resources
 
@@ -42,3 +34,4 @@ dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
 - <https://github.com/rwxrob>
 - <https://git.sr.ht/~whynothugo/dotfiles/>
 - <https://github.com/dreamsofcode-io/tmux>
+- <https://afridi.dev/articles/organize-your-zsh-configurations-and-plugins/>

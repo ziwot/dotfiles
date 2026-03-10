@@ -1,8 +1,0 @@
-{
-    "require": {
-        "symfony/var-dumper": "^5.4"
-    },
-    "require-dev": {
-        "nikic/php-parser": "^4.17"
-    }
-}

@@ -1,8 +1,0 @@
-#!/bin/sh
-
-image=oxheadalpha/flextesa:latest
-script=kathmandubox
-docker run --rm --name sandbox --detach -p 20000:20000 \
-       -e block_time=3 \
-       -e flextesa_node_cors_origin='*' \
-       "$image" "$script" start

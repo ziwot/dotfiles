@@ -1,5 +1,3 @@
 zsh-secrets
-keys.dev.pub
-keys.tags.pub
-.htaccess
 .zcompcache
+plugins
