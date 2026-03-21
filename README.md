@@ -1,5 +1,12 @@
 # dotfiles
 
+## Dependencies
+
+- zsh
+- fzf
+- tmux
+- ripgrep
+
 ## Installing
 
 Run `stow` to symlink everything or just select what you want
@@ -19,6 +26,12 @@ stow -nv */ -t ~/ # simulation
 ### tmux
 
 Install plugins with `prefix + I`
+
+### conf
+
+```sh
+ npm config set prefix "${HOME}/.npm-packages"
+```
 
 ## Resources
 
