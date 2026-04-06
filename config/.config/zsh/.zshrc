@@ -27,6 +27,7 @@ unsetopt BEEP
 
 # completions
 autoload -Uz compinit
+compinit
 zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
 zmodload zsh/complist
@@ -60,5 +61,4 @@ zsh_add_plugin "hlissner/zsh-autopair"
 
 source <(fzf --zsh)
 
-# opencode
-export PATH=/home/steven/.opencode/bin:$PATH
+. "$HOME/.cargo/env"

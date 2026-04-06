@@ -8,4 +8,5 @@ return {
   "mbbill/undotree",
   "tpope/vim-fugitive",
   "norcalli/nvim-colorizer.lua",
+  "sindrets/diffview.nvim",
 }

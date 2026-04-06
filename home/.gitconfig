@@ -8,7 +8,7 @@
   dump = cat-file -p
 
 [user]
-	email = @not-a-number.tez
+	email = sjehann@gmail.com
 	name = Steven J.
 [core]
 	excludesfile = /home/steven/.gitignore_global
