@@ -31,6 +31,7 @@ return {
         bashls = true,
         pyright = true,
         biome = true,
+        cssls = true,
         lua_ls = {
           cmd = { "lua-language-server" },
         },

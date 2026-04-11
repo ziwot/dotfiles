@@ -1,0 +1,5 @@
+window-decoration = false
+theme = Gruvbox Dark
+
+font-family="Ubuntu Sans Mono"
+font-size=9
