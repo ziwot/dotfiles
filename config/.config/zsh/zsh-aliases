@@ -43,3 +43,6 @@ alias lf='lfub'
 
 # vim
 alias vim='nvim'
+
+# fd
+alias fd='fdfind'
