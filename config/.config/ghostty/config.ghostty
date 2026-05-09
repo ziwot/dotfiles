@@ -3,3 +3,5 @@ theme = Gruvbox Dark
 
 font-family="Ubuntu Sans Mono"
 font-size=9
+
+keybind = global:f11=toggle_fullscreen

@@ -15,3 +15,6 @@
 	editor = nvim
 [pager]
     branch = false
+
+[notes]
+    rewriteRef = refs/notes/commits

@@ -5,14 +5,15 @@ export PATH=$PATH:$HOME/go/bin
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
 
-. "$HOME/.cargo/env"
-
 # Preserve MANPATH if you already defined it somewhere in your config.
 # Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 # opencode
 export PATH=/home/steven/.opencode/bin:$PATH
+
+# cargo
+. "$HOME/.cargo/env"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -21,3 +22,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # opam configuration
 [[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# nix
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ];
+    then . $HOME/.nix-profile/etc/profile.d/nix.sh;
+fi
