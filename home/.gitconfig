@@ -1,18 +1,18 @@
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
 
 [user]
-	email = sjehann@gmail.com
-	name = Steven J.
+    email = sjehann@gmail.com
+    name = Steven J.
 [core]
-	excludesfile = /home/steven/.gitignore_global
-	editor = nvim
+    excludesfile = /home/steven/.gitignore_global
+    editor = nvim
 [pager]
     branch = false
 

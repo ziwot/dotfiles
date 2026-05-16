@@ -38,9 +38,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls --color=auto'
 
-# lf
-alias lf='lfub'
-
 # vim
 alias vim='nvim'
 

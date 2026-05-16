@@ -23,6 +23,12 @@ stow zsh # Just my zsh config
 stow -nv */ -t ~/ # simulation
 ```
 
+### lf
+
+The [lf](https://github.com/gokcehan/lf) config requires [kitty](https://sw.kovidgoyal.net/kitty/) and 
+[pistol](https://github.com/doronbehar/pistol)to be installed, 
+see [docs](https://github.com/gokcehan/lf/wiki/Previews#with-kitty-and-pistol)
+
 ### tmux
 
 Install plugins with `prefix + I`
